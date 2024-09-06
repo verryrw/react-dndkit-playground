@@ -1,5 +1,5 @@
 # React Drag & Drop with dnd-kit  
-This repo represents a small feature of kanban app to drag a task from one column into another.
+This repo represents a small feature of kanban app to drag & drop a task from one column into another.
 
 ## How to use
 1. Clone the repo
