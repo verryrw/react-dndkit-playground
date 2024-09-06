@@ -8,7 +8,7 @@ interface TaskCardProps {
 }
 
 export default function TaskCard({ task }: TaskCardProps) {
-  const [isEditing, setIsEditing] = useState(false);
+  const [isEditing] = useState(false);
   const { setNodeRef, attributes, listeners, transform, transition, isDragging } = useSortable({
     id: task.id,
     data: {

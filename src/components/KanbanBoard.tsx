@@ -50,7 +50,7 @@ export default function KanbanBoard() {
 
   const handleDragEnd = (event: DragEndEvent) => {
     setActiveTask(null);
-    const { active, over } = event;
+    const { over } = event;
     if (!over) return;
   };
 
@@ -78,7 +78,7 @@ export default function KanbanBoard() {
     if (isActiveATask && isOverAColumn) {
       setTasks((tasks) => {
         const activeIndex = tasks.findIndex((task) => task.id === active.id);
-        tasks[activeIndex].columnId = over.id;
+        tasks[activeIndex].columnId = over.id as string;
 
         return arrayMove(tasks, activeIndex, activeIndex);
       });

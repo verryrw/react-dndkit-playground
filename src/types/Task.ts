@@ -1,5 +1,5 @@
 export interface Task {
   id: string;
-  columnId: Id;
+  columnId: string | null;
   content: string;
 }
